@@ -152,4 +152,7 @@ td {
   .addFeedback{
     width: 80%;
   }
+  .btn{
+    padding: 4px 8px;
+  }
 }
