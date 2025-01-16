@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Nunito", serif;
+}
+a{
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.center h1 {
+  margin-top: 4px;
+}
+.center {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 8px;
+}
+
+.btn {
+  margin-inline: 8px;
+  background-color: skyblue;
+  padding: 8px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.form {
+  padding: 1rem ;
+  width:100%;
+  max-width: 400px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.form p{
+  text-align: center;
+}
+.title{
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+.input-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-block: 1rem;
+ 
+}
+.input-group input{
+  font: inherit;
+  height: 24px;
+  outline: none;
+  padding: 2px 4px;
+}
+.input-group button{
+  font: inherit;
+  height: 32px;
+  background-color: rgb(62, 230, 62);
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard{
+  max-width: 800px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+}
+.content-table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  max-width: 650px;
+  margin-inline: auto;
+  margin-top: 4rem;
+  align-self: flex-start;
+
+}
+table th,
+td {
+  border: 1px solid;
+  padding: 8px 6px;
+}
+.icon {
+  margin-inline: 6px;
+  cursor: pointer;
+  color: rgb(1, 3, 99);
+}
+
+
+.addFeedback{
+  padding: 1rem ;
+  width:100%;
+  max-width: 400px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+}
+.addFeedback .textarea{
+  width: 100%;
+  height: 72px;
+  margin-bottom: 1rem;
+  padding: 4px ;
+
+}
+.addFeedback{
+  margin-inline: auto;
+}
+.home{
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 8px;
+}
+#error{
+  margin-block:2px;
+  text-align: left;
+  color: red;
+  font-size: 0.9em;
+}
+@media (max-width : 1100px) {
+  .home{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:720px)
+{
+  .logo h1 {
+    font-size: 18px;
+  }
+  .header {
+   padding-inline: 8px;
+  }
+  .addFeedback{
+    width: 80%;
+  }
+}
